@@ -1,0 +1,10 @@
+/opt/notification-service/log/*.log {
+    daily
+    missingok
+    rotate 24
+    compress
+    delaycompress
+    notifempty
+    copytruncate
+    su notification-service notification-service
+}
